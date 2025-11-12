@@ -1,0 +1,36 @@
+<!DECOTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+      
+    <script>
+      function greet(name) {
+        console.log(name);
+
+      }
+      greet(`Hello ${name}`);
+      greet('simon');
+      greet();
+      if (!name) {
+        console.log('name');
+      }
+      function convertToFahrenheit(celsius) {
+        console.log((celsius * 9/5) + 32);
+      }
+      convertToFahrenheit(25);
+      function convertToCelsius(fahrenheit) {
+        console.log((fahrenheit - 32) * 5/9);
+      }
+      convertToFahrenheit(86);
+      function convertTemperature(degrees, unit) {
+        console.log(degrees, ('C', 'F'));
+
+      }
+      convertTemperature(25,'C');
+      convertTemperature(86,'F');
+    </script>
+
+  </body>
+</html>

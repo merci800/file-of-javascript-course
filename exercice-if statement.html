@@ -1,0 +1,36 @@
+<!DECOTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+      
+    <script>
+      let age = 5;
+      const IS_CHILD = age <= 6;
+      const IS_SENIOR = age >= 65;
+
+      console.log(`---Testing Age: ${age}---`);
+      if (IS_CHILD || IS_SENIOR) {
+        console.log('Discount');
+      } else {
+        console.log('no discount');
+      }
+      const isHoliday = true;
+      if (IS_CHILD && isHoliday) {
+        console.log('extra discount');
+      }
+      var randomNumber = Math.random();
+      if (randomNumber > 0.5){
+        console.log('head');
+      } else {
+        cosole.log('tails');
+      }
+      var maxQuantity = 10;
+      if (maxQuantity > 10) {
+        console.log('the chart is full' + 'do not update the quantity');
+      }
+    </script>
+
+  </body>
+</html>

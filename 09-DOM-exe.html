@@ -1,0 +1,42 @@
+<!DECOTYPE html>
+<html>
+  <head>
+   <title>Exercise on DOM</title>
+  </head>
+  <body>
+     <button onclick="
+      question();
+      ">9a</button>
+      <button onclick="
+       changeButton();
+      " class="button-done">9b</button>
+       <button onclick="
+       
+       ">head</button>
+       <button onclick="
+       
+       ">tail</button>
+       <p class="js-head"></p>
+       <p class="js-tail"></p>
+    <script>
+
+      function coinType() {
+         const coinElement = document.querySelector('button-done');
+       
+         document.querySelector(.'js-head').innerHTML = 'you head';
+      }
+        
+      function changeButton() {
+         const doneElement = document.querySelector('.button-done');
+      if (doneElement.innerHTML === '9b') {
+            doneElement.innerHTML = '9b done!';
+      } else {doneElement.innerHTML = '9b';
+    }
+      }
+    function question() {
+     console.log(newElement = document.querySelector('button').innerHTML);
+    } 
+    </script>
+
+  </body>
+</html>
