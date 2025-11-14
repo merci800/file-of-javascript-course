@@ -5,7 +5,8 @@
   </head>
   <body>
      <h2>HELLO WOLRD!</h2>
-
+      <input placeholder="price" id="p1">
+      <p id="p2"></p>
     <script>
      /*alert( 1 && null && 2 ); 
      alert (alert(1) && alert(2));
@@ -77,12 +78,48 @@
    }
     */
    //let result=(a+b<4) ? 'below': 'over';
-   let message = (login == 'employee')? 'hello':
+   /*let message = (login == 'employee')? 'hello':
                   (login == 'Director')? 'Greetings':
                   (login == '')? 'No login': '';
-         
+    */
+  /* let age= 5;
+   if (age>=14 || age<=90) {
+    alert(true);
+   } else {alert (false);}
+   if (!(age>=14 || age<=90))
+     */
+   /*Name = prompt("who's there?","") ;
+   if (Name === "Admin") {
+    let pasword= prompt("which password?","");
+    if (password === "TheMaster"){
+     alert("welcome!");
+    }
+    else if (password === '' || password === null) {
+      alert("wrong password");
+    }
+    else  {
+      alert("canceled");
+    }
 
+   } else if (Name === '' || Name === null) {
+    alert("canceled");
+   } else 
+    alert("i don't know you")
+   }
+    */
+   
+   //alert((height ?? 100) * (width ?? 50));\
+
+   function calculationTax(price, Taxrate) {
+    console.log(price);
+     console.log(Taxrate);
+      console.log(price * Taxrate);
+    }
+      calculationTax(400, 0.2);
       
+    document.getElementById('p2').innerHTML=`total price is ${calculationTax(500, 0.1)}`;
+
+   
   </script>
  
   </body>
